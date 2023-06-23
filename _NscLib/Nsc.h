@@ -1341,7 +1341,7 @@ private:
 	bool                          m_CacheResources;
 	ResourceCache                 m_ResourceCache;
 	IDebugTextOut               * m_ErrorOutput;
-	bool	  					  m_LowerCase
+	bool	  		      m_LowerCase;
 };
 
 #endif // ETS_NSC_H
