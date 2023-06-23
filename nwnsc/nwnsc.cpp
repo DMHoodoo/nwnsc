@@ -2067,6 +2067,10 @@ Environment:
                             CompilerFlags |= NscCompilerFlag_DisableDoubleQuote;
                             break;
 
+                        case 'u':
+                            CompilerFlags |= NscCompilerFlag_LowerCase;
+                            break;
+
                         default: {
                             g_TextOut.WriteText("Error: Unrecognized option \"%c\".\n", Switch);
                             Error = true;
@@ -2161,6 +2165,7 @@ Environment:
                         "  -y - Continue processing input files even on error\n"
                         "  -M - Create makefile dependency (.d) files\n"
                         "  -Q - Disable the parsing of \\\" and \\\\ (added in NWN EE) \n\n"
+                        "  -u - Checks lower case before checking standard resources\n\n"
                         "  The Compiler requires the nwscript.nss from the game resources. The following order\n"
                         "      will be followed to find the file. The search stops on the first match.\n"
                         "    1. -i pathspec  The pathspec will be searched as the game scipts may\n"

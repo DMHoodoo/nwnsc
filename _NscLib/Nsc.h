@@ -147,6 +147,7 @@ enum NscCompilerFlags
 	NscCompilerFlag_GenerateMakeDeps	= 0x00000010,
     NscCompilerFlag_SuppressWarnings   	= 0x00000020,
     NscCompilerFlag_DisableDoubleQuote  = 0x00000040,
+    NscCompilerFlag_LowerCase 			= 0x00000080,
 };
 
 //-----------------------------------------------------------------------------
@@ -1340,7 +1341,7 @@ private:
 	bool                          m_CacheResources;
 	ResourceCache                 m_ResourceCache;
 	IDebugTextOut               * m_ErrorOutput;
-
+	bool	  					  m_LowerCase
 };
 
 #endif // ETS_NSC_H
