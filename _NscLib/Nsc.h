@@ -1298,7 +1298,7 @@ private:
 
 	// @cmember Cache a resource for future fast path lookups.
 
-	//
+	// 
 	// Resource cache access.  The resource cache maintains references to game
 	// resources during loading so that performance is improved.
 	//
